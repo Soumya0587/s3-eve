@@ -8,6 +8,20 @@ import Navbar from "../components/navbar"
 export default function Home({res}) {
 
   const skills=["HTML", "CSS" , "JavaScript" , "React" , "Next.js" , "Node"]
+  const experience=[
+    {
+      id:1,
+      comapnay:"Entiovi technology private limited",
+      role:"Trainee",
+      duration:"july 2019 - march 2020"
+    },
+    {
+      id:2,
+      comapnay:"Netscribes",
+      role:"Ecommerce-Associate",
+      duration:"july 2020 - march 2022"
+    }
+  ]
 
 
   return (
@@ -38,6 +52,19 @@ export default function Home({res}) {
           {skills.map((el,i)=>(
             
               <div style={{backgroundColor:"#3182ce", borderRadius:"15px",color:"white",textAlign:"center" ,height:"25px", width:"90px",marginLeft:"25px",border:"0px"}} key={i}>{el}</div>
+          
+            
+          ))}
+        </div>
+        <div >
+          <h2>Experience</h2>
+          {experience.map((el)=>(
+            
+              <div key={el.id} style={{width:"30%"}} >
+                <h5 style={{fontSize:"20px"}}>{el.comapnay}</h5>
+                <h5 style={{fontSize:"20px"}}>{el.role}</h5>
+                <h5 style={{fontSize:"20px"}}>{el.duration}</h5>
+              </div>
           
             
           ))}
