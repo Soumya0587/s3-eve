@@ -39,9 +39,7 @@ export default function Home({res}) {
         <button style={{backgroundColor:"#3182ce", borderRadius:"15px", height:"40px", width:"130px",marginLeft:"25px",border:"0px",color:"white"}}>Resume</button>
         </Link>
 
-          <Link href={res.blog}>
-          <button style={{backgroundColor:"#38a169", borderRadius:"15px", height:"40px", width:"130px",border:"0px",marginLeft:"25px",color:"white"}}>Portfolio</button>
-          </Link>
+        
         
         <Link href="https://github.com/Soumya0587">
         <button style={{backgroundColor:"#3182ce", borderRadius:"15px", height:"40px", width:"130px",marginLeft:"25px",border:"0px",color:"white"}}>Follow</button>
