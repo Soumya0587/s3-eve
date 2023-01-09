@@ -1,10 +1,15 @@
+import Image from "next/image"
+import Navbar from "../components/navbar"
 
 
 export default function Home({res}) {
   return (
     <>
+    <Navbar/>
      <div>
-        <h3>{res.name}</h3>
+      <Image src={res.avatar_url} alt="image" height={150} width={150} />
+        <h2>{res.name}</h2>
+        <h3>{res.login}</h3>
         <h3>{res.bio}</h3>
         <h4>{res.location}</h4>
     </div>

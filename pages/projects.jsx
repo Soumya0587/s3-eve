@@ -5,13 +5,14 @@ const Projects = ({data}) => {
     console.log(data)
   return (
     <div>
-        <div>
+        <div style={{display :"grid", gridTemplateColumns:"repeat(2,1fr)", gap:"20px" }}>
             {data.map((el)=>(
             <Link key={el.id} href={el.html_url}>
-            <div key={el.id}>
-                <h4>{el.name}</h4>
+            <div key={el.id} style={{border:"2px solid grey", padding:"15px"}}>
+                <h2>{el.name}</h2>
                 <h4>{el.forks_count}</h4>
                 <h4>{el.stargazers_count}</h4>
+                <h2>{el.language}</h2>
             </div>
             </Link>
             ))}
